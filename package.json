@@ -19,6 +19,7 @@
     "lint:effect-patterns": "ast-grep scan -c script/ast-grep/sgconfig.yml packages/util/src packages/core/src packages/server/src packages/protocol/src packages/cli/src",
     "test:lint-rules": "ast-grep test -c script/ast-grep/sgconfig.yml",
     "typecheck": "bun turbo typecheck --concurrency=3",
+    "build:server": "bun turbo build --filter=@opencode-ai/server...",
     "typecheck:profile": "bun script/profile-typecheck.ts",
     "typecheck:profile:packages": "bun script/profile-typecheck-packages.ts",
     "upgrade-opentui": "bun run script/upgrade-opentui.ts",
